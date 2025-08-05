@@ -1,2 +1,31 @@
-# AdvanceSelenium_August
-By Siddhant Pawar
+****# AdvanceSelenium_August
+
+This s for Mac
+
+chromium commands
+--disable-notifications
+
+ChromeOptions options = new ChromeOptions();
+options.addArguments("--disable-notifications")
+options.addArguments("--incognito")
+
+ChromeOptions settings = new ChromeOptions();//when ever notifications popups
+//				EdgeOptions settings1 = new EdgeOptions();
+				Map<String, Object> prefs = new HashMap<>();
+			    prefs.put("profile.password_manager_leak_detection", false);
+			    settings.setExperimentalOption("prefs", prefs);      //preferences- key - value pair//org.openqa.selenium.NoSuchElementException
+				//Launch the browser
+//				WebDriver driver = new ChromeDriver(settings);
+				
+				WebDriver driver = null;                         //I don knw which browser to open so I gave WebDriver
+				if(BROWSER.equals("chrome")) {
+					driver = new ChromeDriver(settings);
+				}else if (BROWSER.equals("safari")) {
+					driver = new SafariDriver();
+				}else if (BROWSER.equals("firefox")) {
+					driver = new FirefoxDriver();
+				}
+					
+			WebDriver driver = new ChromeDriver(options);	
+
+   If auto generated file for excel or anything thn delete n maven clean n update the project otherwise u wil get class nt found exception
