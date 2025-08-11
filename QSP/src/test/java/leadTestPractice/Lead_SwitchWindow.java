@@ -1,7 +1,5 @@
 package leadTestPractice;
 
-
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.time.Duration;
