@@ -1,10 +1,9 @@
-package webDriverUtility;
+package fileUtility;
 
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Set;
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -15,14 +14,12 @@ import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-public class WebDriverUtility {
-	
+public class WebDriverUtility1 {
 	public void waitforPageToLoad(WebDriver driver) {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 	}
 	public void waitForVisibilityofElement(WebDriver driver, WebElement element) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); 
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			wait.until(ExpectedConditions.visibilityOf(element));
 		}
 		
@@ -117,10 +114,7 @@ public class WebDriverUtility {
 			JavascriptExecutor jse =(JavascriptExecutor)driver;
 			jse.executeScript("window.scrollBy("+x+","+y+")");
 		}
-	
-//	public void mouseHoverOnWebElement(WebDriver driver, WebElement we) {
-//	Actions act = new Actions(driver);
-//	act.moveToElement(we).perform();;
-//	
-//	}
+		
 }
+//all import//double click also
+

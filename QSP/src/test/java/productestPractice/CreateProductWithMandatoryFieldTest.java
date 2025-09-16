@@ -101,7 +101,7 @@ public class CreateProductWithMandatoryFieldTest {
 		WebElement vendor = driver.findElement(By.name("vendorId"));
 		
 		Select sel2 = new Select(vendor);
-		sel1.selectByIndex(2);
+		sel2.selectByIndex(2);
 		
 	}
 

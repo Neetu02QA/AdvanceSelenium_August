@@ -1,10 +1,8 @@
 package create_camp;
 
-import java.io.FileInputStream;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -13,7 +11,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
-//import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -21,9 +18,9 @@ import fileUtility.ExcelFileUtility;
 import fileUtility.ProperityFileUtility;
 import fileUtility.WebDriverUtility1;
 
-public class createCamp {
+public class CreateCampaignWithStatus {
 
-	public static void main(String[] args) throws Throwable {
+public static void main(String[] args) throws Throwable {
 		
 		//Properties file
 		ProperityFileUtility pf = new ProperityFileUtility();
@@ -112,7 +109,5 @@ public class createCamp {
 		    System.out.println("Campaign is not created");
 		}
 
-
-	}
-
+}
 }
